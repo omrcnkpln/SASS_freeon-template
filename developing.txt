@@ -1,3 +1,0 @@
-font type license
-small screnn de scrollbar thumb gözüküyor
-ilanlara foto eklerken boyut bilgisi ile almamız lazım
