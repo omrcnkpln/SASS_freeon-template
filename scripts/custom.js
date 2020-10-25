@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
     // <!-- _____________________________ vertical-navbar movement _____________________________________________________________ -->
 
@@ -49,7 +49,8 @@ $(function(){
     var kaydir = 0;
     if (a < 992) {
         var active_elementWidth = active_element.width();
-        var active_elementSol = active_element.offset().left;
+        // .left
+        var active_elementSol = active_element.offset();
         var kaydir = (active_elementSol - a / 2) + active_elementWidth / 2;
 
         $("#nav").animate({
@@ -105,9 +106,10 @@ $(function(){
                     } else {
                         if (c > 992) {
                             kaydir = kaydir;
-                        }else{
+                        } else {
                             active_elementWidth = active_element.width();
-                            active_elementSol = active_element.offset().left;
+                            // left
+                            active_elementSol = active_element.offset();
                             kaydir = (active_elementSol - a / 2) + active_elementWidth / 2;
                         }
                     }
@@ -127,5 +129,67 @@ $(function(){
             }, 1000);
         }
     }
+
+
+    // _____________________________ mobil menu _____________________________________________________________
+    var menu_ac = $("#menu_ac");
+    var menu_kapat = $("#menu_kapat");
+    var m_section = $("#menu_section");
+    var submenu_button = $("#submenu_button_container li");
+    var menu_3 = $("#menu_3");
+    // var a = 0, e = 0, l = 0;
+
+    $('#menu_ac, .overlay').click(function () {
+        // scrollbar şi karıştırdı
+        w = window.innerWidth;
+        if (w > 1200) {
+            submenu_button.removeClass('active').find('ul').hide();
+            m_section.hide(333);
+            $('.overlay').removeClass('show');
+            $('body').removeClass('overflow');
+
+            if (menu_3.hasClass("fadeInDown_2")) {
+                menu_3.addClass("fadeOutUp_2").removeClass("fadeInDown_2");
+            } else {
+                menu_3.addClass("fadeInDown_2").removeClass("fadeOutUp_2");
+            }
+            // menu_3.toggle(333);
+        } else {
+            // menu_3.hide(333);
+
+            if ($(m_section).hasClass("animate__slideInLeft")) {
+                $(m_section).addClass('animate__slideOutLeft').removeClass('animate__slideInLeft');
+                $('.overlay').removeClass('show');
+                $('body').removeClass('overflow');
+            } else {
+                $(m_section).show().addClass('animate__slideInLeft').removeClass('animate__slideOutLeft');
+                $('.overlay').addClass('show');
+                $('body').addClass('overflow');
+            }
+
+            menu_kapat.click(function () {
+                $(m_section).addClass('animate__slideOutLeft').removeClass('animate__slideInLeft');
+                $('.overlay').removeClass('show');
+                $('body').removeClass('overflow');
+            });
+
+            submenu_button.removeClass('active').find('ul').hide();
+
+        }
+    });
+
+
+    // _____________________________ mobil menunun submenusu _____________________________________________________________
+    var blue_2 = "#1a73e8";
+    submenu_button.click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).find("ul").hide(333);
+        } else {
+            $(this).addClass('active');
+            $(this).find("ul").show(333);
+            $(this).siblings().removeClass('active').find("ul").hide(333);
+        }
+    });
 
 });

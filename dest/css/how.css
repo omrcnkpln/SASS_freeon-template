@@ -1,0 +1,172 @@
+html,
+body {
+  height: 100%; }
+
+.container {
+  max-width: 1280px; }
+
+.main {
+  min-height: 100%; }
+
+body {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: #4a4a4a; }
+  body.overflow {
+    overflow: hidden; }
+  body ::-moz-selection {
+    background-color: rgba(30, 144, 255, 0.2); }
+  body ::selection {
+    background-color: rgba(30, 144, 255, 0.2); }
+  body a {
+    color: #4a4a4a; }
+    body a:hover {
+      color: #020202; }
+  body .btn {
+    color: #4a4a4a;
+    border: none; }
+  body .btn-primary {
+    color: #fff;
+    background-color: #f66238; }
+    body .btn-primary:hover {
+      background-color: #E4613B; }
+
+h5 {
+  margin: 0; }
+
+hr {
+  margin: 0;
+  border-top: 1px solid #bfbfbf; }
+
+button {
+  background-color: #fff; }
+
+.form-control {
+  border-radius: 20px;
+  text-indent: 10px; }
+
+.dropdown-divider {
+  margin: 0; }
+
+.color-orange {
+  color: #f66238; }
+
+.color-muted {
+  color: #948f8f;
+  font-size: 15px; }
+
+.topic-grey {
+  font-size: 60px;
+  color: #4a4a4a; }
+
+.font-type-grey-50 {
+  color: #4a4a4a;
+  font-size: 50px; }
+
+.font-type-grey-40 {
+  color: #4a4a4a;
+  font-size: 40px; }
+
+.font-type-grey-30 {
+  color: #4a4a4a;
+  font-size: 30px; }
+
+@-webkit-keyframes benim_fadeInDown_2 {
+  0% {
+    visibility: hidden; }
+  to {
+    visibility: visible; } }
+
+@-moz-keyframes benim_fadeInDown_2 {
+  0% {
+    visibility: hidden; }
+  to {
+    visibility: visible; } }
+
+@-o-keyframes benim_fadeInDown_2 {
+  0% {
+    visibility: hidden; }
+  to {
+    visibility: visible; } }
+
+@keyframes benim_fadeInDown_2 {
+  0% {
+    visibility: hidden; }
+  to {
+    visibility: visible; } }
+
+.fadeInDown_2 {
+  -webkit-animation-name: benim_fadeInDown_2;
+  -moz-animation-name: benim_fadeInDown_2;
+    -o-animation-name: benim_fadeInDown_2;
+       animation-name: benim_fadeInDown_2; }
+
+@-webkit-keyframes benim_fadeOutUp_2 {
+  from {
+    visibility: visible; }
+  to {
+    visibility: hidden; } }
+
+@-moz-keyframes benim_fadeOutUp_2 {
+  from {
+    visibility: visible; }
+  to {
+    visibility: hidden; } }
+
+@-o-keyframes benim_fadeOutUp_2 {
+  from {
+    visibility: visible; }
+  to {
+    visibility: hidden; } }
+
+@keyframes benim_fadeOutUp_2 {
+  from {
+    visibility: visible; }
+  to {
+    visibility: hidden; } }
+
+.fadeOutUp_2 {
+  -webkit-animation-name: benim_fadeOutUp_2;
+  -moz-animation-name: benim_fadeOutUp_2;
+    -o-animation-name: benim_fadeOutUp_2;
+       animation-name: benim_fadeOutUp_2; }
+
+@media screen and (max-width: 576px) {
+  .login-side {
+    position: absolute;
+    top: 1px;
+    right: 0; }
+  footer {
+    text-align: center; }
+    footer .social .d-flex {
+      -webkit-justify-content: space-evenly;
+         -moz-box-pack: space-evenly;
+              justify-content: space-evenly; } }
+
+header {
+  height: 500px;
+  background-color: #0769e0; }
+  header .fixed-top {
+    background-color: #0769e0;
+    border-bottom: 1px solid turquoise; }
+  header .btn {
+    color: #fff; }
+  header .btn-radial {
+    border-radius: 30px; }
+  header .topic-white {
+    font-size: 1.5rem;
+    color: #fff; }
+
+.nasil-calisir {
+  background-color: #f0f0f0; }
+
+footer {
+  background-color: #0769e0;
+  color: #fff; }
+  footer a,
+  footer h4 {
+    color: #fff; }
+  footer .nav-link-no-padding .nav-link {
+    padding-left: 0;
+    padding-right: 0; }
