@@ -68,8 +68,22 @@ module.exports = function (grunt) {
       },
       dest: {
         files: {
-          'dest/css/style.css': 'src/css/style.scss'
-          // 'dest/css/settings.css': 'src/css/settings.scss'
+          'dest/css/style.css': 'src/css/style.scss',
+          'dest/css/anasayfa.css': 'src/css/anasayfa.scss',
+          'dest/css/order.css': 'src/css/order.scss',
+          'dest/css/sale.css': 'src/css/sale.scss',
+          'dest/css/ilan.css': 'src/css/ilan.scss',
+          'dest/css/portfolyom.css': 'src/css/portfolyom.scss',
+          'dest/css/jobs_for_you.css': 'src/css/jobs_for_you.scss',
+          'dest/css/place_order.css': 'src/css/place_order.scss',
+          'dest/css/my_orders.css': 'src/css/my_orders.scss',
+          'dest/css/my_profile.css': 'src/css/my_profile.scss',
+          'dest/css/my_account.css': 'src/css/my_account.scss',
+          'dest/css/uyelik.css': 'src/css/uyelik.scss',
+          'dest/css/security.css': 'src/css/security.scss',
+          'dest/css/payment_information.css': 'src/css/payment_information.scss',
+          'dest/css/bildirimler.css': 'src/css/bildirimler.scss',
+          'dest/css/kayit1.css': 'src/css/kayit1.scss'
         }
       }
     },
@@ -82,7 +96,22 @@ module.exports = function (grunt) {
 
       dist: {
         files: {
-          'dest/css/style.css': 'dest/css/style.css'
+          'dest/css/style.css': 'dest/css/style.css',
+          'dest/css/anasayfa.css': 'dest/css/anasayfa.css',
+          'dest/css/order.css': 'dest/css/order.css',
+          'dest/css/sale.css': 'dest/css/sale.css',
+          'dest/css/ilan.css': 'dest/css/ilan.css',
+          'dest/css/portfolyom.css': 'dest/css/portfolyom.css',
+          'dest/css/jobs_for_you.css': 'dest/css/jobs_for_you.css',
+          'dest/css/place_order.css': 'dest/css/place_order.css',
+          'dest/css/my_orders.css': 'dest/css/my_orders.css',
+          'dest/css/my_profile.css': 'dest/css/my_profile.css',
+          'dest/css/my_account.css': 'dest/css/my_account.css',
+          'dest/css/uyelik.css': 'dest/css/uyelik.css',
+          'dest/css/security.css': 'dest/css/security.css',
+          'dest/css/payment_information.css': 'dest/css/payment_information.css',
+          'dest/css/bildirimler.css': 'dest/css/bildirimler.css',
+          'dest/css/kayit1.css': 'dest/css/kayit1.css'
         }
       }
     },

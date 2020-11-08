@@ -192,4 +192,33 @@ $(function () {
         }
     });
 
+
+    // _____________________________ checkbox - radio button  _____________________________________________________________
+    $(':radio, :checkbox').each(function () {
+        $(this).after('');
+        if ($(this).is(':checked')) {
+            $(this).parent().addClass('checked');
+        }
+    });
+
+    $('label').on('click', function (e) {
+
+        // radio
+        if ($(':radio', this).length) {
+            var name = $(':radio', this).attr('name');
+            $('input[name=' + name + ']').parent().removeClass('checked');
+            $(this).addClass('checked');
+        }
+
+        // checkbox
+        if ($(':checkbox', this).length) {
+            if ($(':checkbox', this).is(':checked')) {
+                $(this).addClass('checked');
+            } else {
+                $(this).removeClass('checked');
+            }
+        }
+
+    });
+
 });

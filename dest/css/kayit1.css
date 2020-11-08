@@ -164,41 +164,33 @@ input, textarea {
     -o-animation-name: benim_fadeOutUp_2;
        animation-name: benim_fadeOutUp_2; }
 
-@media screen and (max-width: 576px) {
-  .login-side {
-    position: absolute;
-    top: 1px;
-    right: 0; }
-  footer {
-    text-align: center; }
-    footer .social .d-flex {
-      -webkit-justify-content: space-evenly;
-         -moz-box-pack: space-evenly;
-              justify-content: space-evenly; } }
+.content {
+  margin: 0 auto;
+  margin-top: 80px; }
 
 header {
-  height: 500px;
-  background-color: #0769e0; }
-  header .fixed-top {
-    background-color: #0769e0;
-    border-bottom: 1px solid turquoise; }
-  header .btn {
-    color: #fff; }
-  header .btn-radial {
-    border-radius: 30px; }
-  header .topic-white {
-    font-size: 1.5rem;
-    color: #fff; }
+  background-color: #fff; }
 
-.nasil-calisir {
-  background-color: #f0f0f0; }
-
-footer {
-  background-color: #0769e0;
-  color: #fff; }
-  footer a,
-  footer h4 {
-    color: #fff; }
-  footer .nav-link-no-padding .nav-link {
-    padding-left: 0;
-    padding-right: 0; }
+.box {
+  background-color: #fff;
+  border: 1px solid #bfbfbf; }
+  .box .option-wrapper {
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+            justify-content: space-between; }
+    .box .option-wrapper label {
+      cursor: pointer; }
+    .box .option-wrapper label input {
+      position: absolute;
+      opacity: 0; }
+    .box .option-wrapper label span {
+      display: block;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: 250px;
+      text-align: center;
+      border: 2px solid #bfbfbf; }
+    .box .option-wrapper label.checked span {
+      border: 2px solid #f66238; }
+  .box .btn-primary {
+    border-radius: 20px; }

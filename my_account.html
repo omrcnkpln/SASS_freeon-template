@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Website Demo">
+    <meta name="author" content="@pasadagli">
+    <meta name="keywords" content="HTML, CSS, jquery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hesabım</title>
+
+    <!-- _____________________________ AOS.CSS _____________________________________________________________ -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- _____________________________ LIGHTBOX.CSS _____________________________________________________________ -->
+    <!-- lightbox css içinde image yolu ile oynaman gerekebilir -->
+    <!-- <link rel="stylesheet" href="dest/css/default/lightbox.css" /> -->
+
+    <!-- _____________________________ ANIMATE.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+
+    <!-- _____________________________ FONT-AWESOME _____________________________________________________________ -->
+    <!-- biri css i çalıştırıyo diğeri html i -->
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/fontawesome/all.min.css">
+            <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'> -->
+
+    <!-- yeni -->
+    <link rel='stylesheet prefetch'
+        href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <!-- _____________________________ SCROLL-REVEAL _____________________________________________________________ -->
+    <!-- scroll a göre animasyon eklemek için wow un yaptığı iş -->
+    <!-- <script type="text/javascript" src="scripts/scrollreveal.min.js"></script> -->
+
+    <!-- _____________________________ BOOTSTRAP.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" href="dest/css/default/bootstrap.css">
+
+    <!-- _____________________________ RESET.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" type="text/css" href="dest/css/default/reset.css">
+
+    <!-- _____________________________ STYLE.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" type="text/css" href="dest/css/my_account.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- header -->
+    <header>
+        <!-- header-default -->
+        <!-- <div class="px-xl-5 px-3">
+            <div class="row align-items-center">
+                <div class="col-sm-auto">
+                    <div class="row align-items-center">
+                        <div class="col-auto py-2">
+                            <div class="image-wrapper-logo">
+                                <img src="images/FreeON-logo.svg" alt="logo">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-auto">
+                            <form class="form-block mt-1 mb-2">
+                                <input class="form-control mr-sm-2" type="search" placeholder="freeon' da ara">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-auto ml-auto login-side">
+                    <ul class="row">
+                        <li class="nav-link">
+                            <a href="#">
+                                <button class="btn">
+                                    Giriş Yap
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <button class="btn btn-primary">
+                                    Kaydol
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- header-entrance-ok -->
+        <div class="header-entrance-ok px-xl-5 px-3">
+            <div class="row align-items-center">
+                <div class="header-item col-auto py-2">
+                    <div class="image-wrapper-logo">
+                        <a href="index.html">
+                            <img src="images/FreeON-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="header-item navbar navbar-expand-lg navbar-light">
+                    <button id="menu_ac" class="navbar-toggler" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="d-lg-inline d-none">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Siparişler
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="my_orders.html">Siparişlerim</a>
+                                    <a class="dropdown-item" href="place_order.html">Sipariş oluştur</a>
+                                    <a class="dropdown-item" href="anasayfa.html">Freelancer bul</a>
+                                    <a class="dropdown-item" href="order.html">Daha öncekiler</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Freelancer
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="jobs_for_you.html">Bana uygun işler</a>
+                                    <a class="dropdown-item" href="sale.html">Satışlarım</a>
+                                    <a class="dropdown-item" href="ilan.html">İlanlar</a>
+                                    <a class="dropdown-item" href="portfolyom.html">Portfolyom</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Finans</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="header-item col-auto ml-auto header-search d-md-inline d-none">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="freeon' da ara"
+                            aria-label="Search">
+                    </form>
+                </div>
+
+                <div class="header-item col-auto header-user-items ml-md-1 ml-auto">
+                    <ul class="d-flex align-items-center">
+                        <li class="nav-item dropdown-left active">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+
+                                <img src="images/header-notifications.svg" alt="notification-icon">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-item d-flex justify-content-between">
+                                    <h4 class="p-2">
+                                        Bildirimler
+                                    </h4>
+
+                                    <h4 class="p-2 btn">
+                                        Hepsini gör
+                                    </h4>
+                                </div>
+
+                                <a class="dropdown-item">
+                                    <ul class="d-flex align-items-top notification-section">
+                                        <li>
+                                            <div class="image-wrapper-user" style="cursor: pointer;">
+                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
+                                                </li>
+
+                                                <li>Merhaba</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="ml-auto">
+                                            5 ay
+                                        </li>
+                                    </ul>
+                                </a>
+
+                                <a class="dropdown-item">
+                                    <ul class="d-flex align-items-top notification-section">
+                                        <li>
+                                            <div class="image-wrapper-user" style="cursor: pointer;">
+                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
+                                                </li>
+
+                                                <li>
+                                                    fayt neif nabıyon yaa !!
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="ml-auto">
+                                            5 ay
+                                        </li>
+                                    </ul>
+                                </a>
+
+                                <a class="dropdown-item">
+                                    <ul class="d-flex align-items-top notification-section">
+                                        <li>
+                                            <div class="image-wrapper-user" style="cursor: pointer;">
+                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
+                                                </li>
+
+                                                <li>MerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhaba
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="ml-auto">
+                                            5 ay
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown-left active">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+
+                                <img src="images/header-chatboxes.svg" alt="messages-icon">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-item d-flex justify-content-between">
+                                    <h4 class="p-2">
+                                        Mesajlar
+                                    </h4>
+
+                                    <h4 class="p-2 btn">
+                                        Hepsini gör
+                                    </h4>
+                                </div>
+
+                                <a class="dropdown-item">
+                                    <ul class="d-flex align-items-top notification-section">
+                                        <li>
+                                            <div class="image-wrapper-user" style="cursor: pointer;">
+                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
+                                                </li>
+
+                                                <li>Merhaba</li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="ml-auto">
+                                            5 ay
+                                        </li>
+                                    </ul>
+                                </a>
+
+                                <a class="dropdown-item">
+                                    <ul class="d-flex align-items-top notification-section">
+                                        <li>
+                                            <div class="image-wrapper-user" style="cursor: pointer;">
+                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
+                                                </li>
+
+                                                <li>
+                                                    fayt neif nabıyon yaa !!
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="ml-auto">
+                                            5 ay
+                                        </li>
+                                    </ul>
+                                </a>
+
+                                <a class="dropdown-item">
+                                    <ul class="d-flex align-items-top notification-section">
+                                        <li>
+                                            <div class="image-wrapper-user" style="cursor: pointer;">
+                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <ul>
+                                                <li>
+                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
+                                                </li>
+
+                                                <li>MerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhaba
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="ml-auto">
+                                            5 ay
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown-left active">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="default-user-image">
+                                    <span>o</span>
+                                </div>
+
+                                <!-- <div class="image-wrapper-user" style="cursor: pointer;">
+                                    <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
+                                </div> -->
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right p-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item p-2" href="my_profile.html">Profilim</a>
+                                <a class="dropdown-item p-2" href="my_account.html">Ayarlar</a>
+                                <a class="dropdown-item p-2" href="help.html">Yardım</a>
+                                <a class="dropdown-item p-2" href="#">Oturumu Kapat</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="vertical-navbar-area row px-xl-5 px-3">
+            <div class="col-11 pr-0">
+                <nav id="nav" class="vertical-navbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="my_profile.html">
+                                Profilim
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="my_account.html">
+                                Ayarlar
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">
+                                Yardım
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+    </header>
+
+    <!-- sidebar -->
+    <div class="sidebar col-auto">
+        <div class="sidebar-box">
+            <ul>
+                <li>
+                    <a href="my_account.html" class="nav-link">
+                        Hesabım
+                    </a>
+                </li>
+
+                <li>
+                    <a href="uyelik.html" class="nav-link">
+                        Üyelik
+                    </a>
+                </li>
+
+                <li>
+                    <a href="security.html" class="nav-link">
+                        Güvenlik
+                    </a>
+                </li>
+
+                <li>
+                    <a href="payment_information.html" class="nav-link">
+                        Ödeme bilgileri
+                    </a>
+                </li>
+
+                <li>
+                    <a href="bildirimler.html" class="nav-link">
+                        Bildirimler
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+        <div class="content">
+            <section class="no-order py-5">
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-lg-8 offset-xl-3 offset-lg-3 form-wrapper">
+                            <div class="box p-3">
+                                <form action="#">
+                                    <h3 class="font-type-black-44 py-3">Email</h3>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input class="font-type-grey-20 p-2" type="text" placeholder="isim-soyisim">
+                                        </div>
+
+                                        <div class="col-auto ml-auto">
+                                            <button class="btn btn-primary px-4" type="submit">Onay kodu al</button>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="font-type-black-44 py-3">Cep numarası</h3>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input class="font-type-grey-20 p-2" type="text" placeholder="isim-soyisim">
+                                        </div>
+
+                                        <div class="col-auto ml-auto">
+                                            <button class="btn btn-primary px-4" type="submit">Onay kodu al</button>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary mt-4 px-4" type="submit">Kaydet</button>
+                                </form>
+
+                                <hr class="my-3">
+
+                                <form action="#??-">
+                                    <div class="row">
+                                        <div class="col-6 py-3">
+                                            <h3 class="font-type-black-44">Hesabı askıya al</h3>
+                                        </div>
+
+                                        <div class="col-6 py-3">
+                                            <input class="font-type-grey-20 p-2" type="text"
+                                                placeholder="Nereye gidiyorsun??">
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary mt-4 px-4" type="submit">Hesabı askıya al</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="pt-3">
+        <!-- <div class="container"> -->
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="col-lg-auto py-3 px-xl-5 px-3">
+                <div class="image-wrapper-logo">
+                    <img src="images/footer-FreeON-logo.svg" alt="logo">
+                </div>
+            </div>
+
+            <div class="col-sm-auto px-xl-5 px-3">
+                <div id="footer-categories" class="footer-categories animate__animated fadeInDown_2">
+                    <h4 class="py-2" data-toggle="collapse" data-target="#kategoriler-submenu">
+                        Kategoriler
+                    </h4>
+
+                    <ul id="kategoriler-submenu" class="nav-link-no-padding collapse d-sm-block py-2">
+                        <li>
+                            <a href="#" class="nav-link">
+                                Grafik &amp Tasarım
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link">
+                                İnternet Reklamcılığı
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link">
+                                Yazı &amp Çeviri
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link">
+                                Yazılım &amp Teknoloji
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link">
+                                Video &amp Animasyon
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link">
+                                Ses &amp Müzik
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link">
+                                İş &amp Yönetim
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-auto px-xl-5 px-3">
+                <h4 class="py-2" data-toggle="collapse" data-target="#destek-submenu">
+                    Destek
+                </h4>
+
+                <ul id="destek-submenu" class="nav-link-no-padding collapse d-sm-block py-2">
+                    <li>
+                        <a href="#" class="nav-link">
+                            Yardım Merkezi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Nasıl Çalışır?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Bize Yazın
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            İletişim
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-auto px-xl-5 px-3">
+                <h4 class="py-2" data-toggle="collapse" data-target="#topluluk-submenu">
+                    Topluluk
+                </h4>
+
+                <ul id="topluluk-submenu" class="nav-link-no-padding collapse d-sm-block py-2">
+                    <li>
+                        <a href="#" class="nav-link">
+                            Freelancer Ol, İstediğin Gibi Çalış!
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Geleceğin Çalışma Modeli
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            A'dan Z'ye Freelancer Ne Demek?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-auto ml-auto px-xl-5 px-3 social">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#" class="nav-link px-0">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link px-0">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center pt-3">
+            <div class="col-auto px-xl-5 px-0">
+                <ul class="d-flex">
+                    <li>
+                        <a href="#" class="nav-link">
+                            Freeon Hakkında
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Üyelik Sözleşmesi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Gizlilik
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">
+                            Kullanım Şartları
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-auto ml-lg-auto px-xl-5 px-3">
+                <div class="nav-link-no-padding">
+                    <div class="nav-link">
+                        Freeon Bilgi Teknolojileri Paz. ve Tic. A.Ş. © 2020
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- All rights reserved.&copy2020.Coded by pasadagli. -->
+    </footer>
+</body>
+<!-- _____________________________ AOS _____________________________________________________________ -->
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({
+		offset: 400, // offset (in px) from the original trigger point
+		delay: 0, // values from 0 to 3000, with step 50ms
+		duration: 1000 // values from 0 to 3000, with step 50ms
+	});
+</script> -->
+
+<!-- _____________________________ ScrollReveal _____________________________________________________________ -->
+<!-- <script>
+	window.sr = ScrollReveal();
+	sr.reveal('.class adi', {
+		duration: 2000
+	});
+</script> -->
+
+<!-- _____________________________ Lightbox _____________________________________________________________ -->
+<!-- <script type="text/javascript" src="scripts/default/lightbox.min.js"></script> -->
+
+<!-- _____________________________ SmoothScroll _____________________________________________________________ -->
+<!-- <script type="text/javascript" src="scripts/default/smooth-scroll.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> -->
+
+<!-- _____________________________ WOW _____________________________________________________________ -->
+<!-- <script src="scripts/default/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script> -->
+
+<!-- _____________________________ jquery _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/default/jquery-3.5.1.min.js"></script>
+
+<!-- _____________________________ bootstrap _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/default/bootstrap.bundle.min.js"></script>
+
+<!-- _____________________________ custom.js _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+</html>

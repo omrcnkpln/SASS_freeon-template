@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Website Demo">
+    <meta name="author" content="@pasadagli">
+    <meta name="keywords" content="HTML, CSS, jquery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anasayfa</title>
+
+    <!-- _____________________________ AOS.CSS _____________________________________________________________ -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- _____________________________ LIGHTBOX.CSS _____________________________________________________________ -->
+    <!-- lightbox css içinde image yolu ile oynaman gerekebilir -->
+    <!-- <link rel="stylesheet" href="dest/css/default/lightbox.css" /> -->
+
+    <!-- _____________________________ ANIMATE.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+
+    <!-- _____________________________ FONT-AWESOME _____________________________________________________________ -->
+    <!-- biri css i çalıştırıyo diğeri html i -->
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/fontawesome/all.min.css">
+        <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'> -->
+
+    <!-- yeni -->
+    <link rel='stylesheet prefetch'
+        href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <!-- _____________________________ SCROLL-REVEAL _____________________________________________________________ -->
+    <!-- scroll a göre animasyon eklemek için wow un yaptığı iş -->
+    <!-- <script type="text/javascript" src="scripts/scrollreveal.min.js"></script> -->
+
+    <!-- _____________________________ BOOTSTRAP.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" href="dest/css/default/bootstrap.css">
+
+    <!-- _____________________________ RESET.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" type="text/css" href="dest/css/default/reset.css">
+
+    <!-- _____________________________ STYLE.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" type="text/css" href="dest/css/kayit1.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- header-entrance-ok -->
+        <div class="header-entrance-ok px-xl-5 px-3">
+            <div class="row align-items-center">
+                <div class="header-item col-auto py-2">
+                    <div class="image-wrapper-logo">
+                        <a href="index.html">
+                            <img src="images/FreeON-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </header>
+
+    <!-- main -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto content">
+                    <div class="box p-3">
+                        <div class="row">
+                            <div class="col font-type-dark-40 py-2">
+                                Merhaba, <span>Tayip Öztürk</span> FreeON'a hoşgeldin.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col font-type-grey-29 py-2">
+                                Hadi profilini oluşturalım.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col font-type-grey-29 py-2">
+                                Sen hangisisin?
+                            </div>
+                        </div>
+
+                        <form action="#">
+                            <div class="row">
+                                <div class="col py-2">
+                                    <ul class="d-flex option-wrapper">
+                                        <li class="btn font-type-grey-29">
+                                            <label>
+                                                <input type="radio" name="profil" />
+                                                <span>
+                                                    Proje &amp İşveren
+                                                </span>
+                                            </label>
+                                        </li>
+
+                                        <li class="btn font-type-grey-29">
+                                            <label>
+                                                <input type="radio" name="profil" />
+                                                <span>
+                                                    Freelancer
+                                                </span>
+                                            </label>
+                                        </li>
+
+                                        <li class="btn font-type-grey-29">
+                                            <label>
+                                                <input type="radio" name="profil" />
+                                                <span>
+                                                    İkiside
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex py-3">
+                                <button class="btn btn-primary ml-auto px-5" type="submit">İleri</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- _____________________________ AOS _____________________________________________________________ -->
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({
+		offset: 400, // offset (in px) from the original trigger point
+		delay: 0, // values from 0 to 3000, with step 50ms
+		duration: 1000 // values from 0 to 3000, with step 50ms
+	});
+</script> -->
+
+<!-- _____________________________ ScrollReveal _____________________________________________________________ -->
+<!-- <script>
+	window.sr = ScrollReveal();
+	sr.reveal('.class adi', {
+		duration: 2000
+	});
+</script> -->
+
+<!-- _____________________________ Lightbox _____________________________________________________________ -->
+<!-- <script type="text/javascript" src="scripts/default/lightbox.min.js"></script> -->
+
+<!-- _____________________________ SmoothScroll _____________________________________________________________ -->
+<!-- <script type="text/javascript" src="scripts/default/smooth-scroll.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> -->
+
+<!-- _____________________________ WOW _____________________________________________________________ -->
+<!-- <script src="scripts/default/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script> -->
+
+<!-- _____________________________ jquery _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/default/jquery-3.5.1.min.js"></script>
+
+<!-- _____________________________ bootstrap _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/default/bootstrap.bundle.min.js"></script>
+
+<!-- _____________________________ custom.js _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+
+</html>

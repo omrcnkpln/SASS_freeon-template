@@ -45,29 +45,24 @@
 </head>
 
 <body>
-    <div class="overlay"></div>
 
     <!-- header -->
-    <header>
+    <header class="d-flex align-items-center">
+
         <!-- header-default -->
-        <!-- <div class="px-xl-5 px-3">
+        <div class="px-xl-5 px-3 fixed-top">
             <div class="row align-items-center">
                 <div class="col-sm-auto">
                     <div class="row align-items-center">
                         <div class="col-auto py-2">
                             <div class="image-wrapper-logo">
-                                <img src="images/FreeON-logo.svg" alt="logo">
+                                <a href="anasayfa.html">
+                                    <img src="images/FreeON-logo-white.svg" alt="logo">
+                                </a>
                             </div>
-                        </div>
-
-                        <div class="col-sm-auto">
-                            <form class="form-block mt-1 mb-2">
-                                <input class="form-control mr-sm-2" type="search" placeholder="freeon' da ara">
-                            </form>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="col-auto ml-auto login-side">
                     <ul class="row">
@@ -80,7 +75,7 @@
                         </li>
 
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="kayit1.html">
                                 <button class="btn btn-primary">
                                     Kaydol
                                 </button>
@@ -89,938 +84,118 @@
                     </ul>
                 </div>
             </div>
-        </div> -->
-
-        <!-- header-entrance-ok -->
-        <div class="header-entrance-ok px-xl-5 px-3">
-            <div class="row align-items-center">
-                <div class="header-item col-auto py-2">
-                    <div class="image-wrapper-logo">
-                        <a href="index.html">
-                            <img src="images/FreeON-logo.svg" alt="logo">
-                        </a>
-                    </div>
-                </div>
-
-                <nav class="header-item navbar navbar-expand-lg navbar-light">
-                    <button id="menu_ac" class="navbar-toggler" type="button">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="d-lg-inline d-none">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    Siparişler
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Siparişlerim</a>
-                                    <a class="dropdown-item" href="#">Sipariş oluştur</a>
-                                    <a class="dropdown-item" href="#">Freelancer bul</a>
-                                    <a class="dropdown-item" href="#">Daha öncekiler</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    Freelancer
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Bana uygun işler</a>
-                                    <a class="dropdown-item" href="#">Satışlarım</a>
-                                    <a class="dropdown-item" href="#">İlanlar</a>
-                                    <a class="dropdown-item" href="#">Portfolyom</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Finans</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <div class="header-item col-auto ml-auto header-search d-md-inline d-none">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="freeon' da ara"
-                            aria-label="Search">
-                    </form>
-                </div>
-
-                <div class="header-item col-auto header-user-items ml-md-1 ml-auto">
-                    <ul class="d-flex align-items-center">
-                        <li class="nav-item dropdown-left active">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-
-                                <img src="images/header-notifications.svg" alt="notification-icon">
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item d-flex justify-content-between">
-                                    <h4 class="p-2">
-                                        Bildirimler
-                                    </h4>
-
-                                    <h4 class="p-2 btn">
-                                        Hepsini gör
-                                    </h4>
-                                </div>
-
-                                <a class="dropdown-item">
-                                    <ul class="d-flex align-items-top notification-section">
-                                        <li>
-                                            <div class="image-wrapper-user" style="cursor: pointer;">
-                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
-                                                </li>
-
-                                                <li>Merhaba</li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="ml-auto">
-                                            5 ay
-                                        </li>
-                                    </ul>
-                                </a>
-
-                                <a class="dropdown-item">
-                                    <ul class="d-flex align-items-top notification-section">
-                                        <li>
-                                            <div class="image-wrapper-user" style="cursor: pointer;">
-                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
-                                                </li>
-
-                                                <li>
-                                                    fayt neif nabıyon yaa !!
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="ml-auto">
-                                            5 ay
-                                        </li>
-                                    </ul>
-                                </a>
-
-                                <a class="dropdown-item">
-                                    <ul class="d-flex align-items-top notification-section">
-                                        <li>
-                                            <div class="image-wrapper-user" style="cursor: pointer;">
-                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
-                                                </li>
-
-                                                <li>MerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhaba
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="ml-auto">
-                                            5 ay
-                                        </li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown-left active">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-
-                                <img src="images/header-chatboxes.svg" alt="messages-icon">
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <div class="dropdown-item d-flex justify-content-between">
-                                    <h4 class="p-2">
-                                        Mesajlar
-                                    </h4>
-
-                                    <h4 class="p-2 btn">
-                                        Hepsini gör
-                                    </h4>
-                                </div>
-
-                                <a class="dropdown-item">
-                                    <ul class="d-flex align-items-top notification-section">
-                                        <li>
-                                            <div class="image-wrapper-user" style="cursor: pointer;">
-                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
-                                                </li>
-
-                                                <li>Merhaba</li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="ml-auto">
-                                            5 ay
-                                        </li>
-                                    </ul>
-                                </a>
-
-                                <a class="dropdown-item">
-                                    <ul class="d-flex align-items-top notification-section">
-                                        <li>
-                                            <div class="image-wrapper-user" style="cursor: pointer;">
-                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
-                                                </li>
-
-                                                <li>
-                                                    fayt neif nabıyon yaa !!
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="ml-auto">
-                                            5 ay
-                                        </li>
-                                    </ul>
-                                </a>
-
-                                <a class="dropdown-item">
-                                    <ul class="d-flex align-items-top notification-section">
-                                        <li>
-                                            <div class="image-wrapper-user" style="cursor: pointer;">
-                                                <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <ul>
-                                                <li>
-                                                    <span>Ömer Can</span> sana bir mesaj yolladı.
-                                                </li>
-
-                                                <li>MerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhabaMerhaba
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="ml-auto">
-                                            5 ay
-                                        </li>
-                                    </ul>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown-left active">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <div class="default-user-image">
-                                    <span>o</span>
-                                </div>
-
-                                <!-- <div class="image-wrapper-user" style="cursor: pointer;">
-                                    <img src="images/IMG.jpg" alt="user-p-image" class="w-100">
-                                </div> -->
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right p-2" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item p-2" href="#">Profilim</a>
-                                <a class="dropdown-item p-2" href="#">Ayarlar</a>
-                                <a class="dropdown-item p-2" href="#">Yardım</a>
-                                <a class="dropdown-item p-2" href="#">Oturumu Kapat</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
         <hr>
 
         <div class="container">
-            <div class="row vertical-navbar-area">
-                <div class="col-11 pr-0">
-                    <nav id="nav" class="vertical-navbar">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="anasayfa.html">
-                                    Grafik &amp Tasarım
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="kisiselBilgiler.html">
-                                    İnternet Reklamcılığı
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Yazı & Çeviri
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="security.html">
-                                    Video & Animasyon
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    Ses & Müzik
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="odemeler.html">
-                                    Yazılım & Teknoloji
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    İş & Yönetim
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <h2 class="topic-white">
+                        Size lazım olan her şey için yetenekli freelancer'larla çalışın.
+                    </h2>
                 </div>
+            </div>
 
-                <div class="col-1 px-0">
-                    <div class="text-center">
-                        <button id="NavRightButton">
-                            <img src="images/arrow-down.svg" alt="">
-                        </button>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-auto">
+                    <form class="form-block mt-1 mb-2 py-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="freeon' da ara">
+                    </form>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <ul class="d-flex">
+                        <li class="pr-2">
+                            <button class="btn btn-primary btn-radial">
+                                İş oluştur
+                            </button>
+                        </li>
+
+                        <li class="pl-2">
+                            <button class="btn">
+                                Freelancer olarak çalış
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        <hr>
     </header>
-
-    <!-- mobile-menu-section -->
-    <section id="menu_section" class="menu-section animate__animated">
-        <div class="menu-top">
-            <a href="index.html"><img src="images/FreeON-logo.svg"></a>
-            <div id="menu_kapat" class="menu-kapat">
-                <div class="line"></div>
-            </div>
-        </div>
-
-        <div class="menu-center">
-            <ul id="submenu_button_container">
-                <li>
-                    <div class="main-list-item">
-                        <span>
-                            Siparişler
-                        </span>
-                    </div>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Siparişlerim
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Sipariş oluştur
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Freelancer bul
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Daha öncekiler
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <div class="main-list-item">
-                        <span>
-                            Freelancer
-                        </span>
-                    </div>
-
-                    <ul class="submenu">
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Bana uygun işler
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Satışlarım
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    İlanlar
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn py-0">
-                                <span>
-                                    Portfolyom
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="main-list-item-single">
-                    <div class="main-list-item">
-                        <span>
-                            <a href="#" class="d-block">
-                                Finans
-                            </a>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <!-- <div class="dropdown-divider my-2"></div> -->
-
-        <div class="menu-bottom">
-            <ul>
-                <li><a href="#">Customer Area</a></li>
-                <li><a href="#">Winfiniti Support</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- sidebar -->
-    <div class="sidebar col-auto">
-        <div class="location-bar">
-            <ul class="d-flex">
-                <li><a href="anasayfa.html">Freeon</a></li>
-                <li><a href="orders.html">Logo Tasarım</a></li>
-            </ul>
-        </div>
-
-
-        <h3 class="sidebar-topic">Logo Tasarım</h3>
-
-        <div class="sidebar-box">
-            <ul>
-                <li>
-                    <a href="#" class="nav-link">
-                        Grafik &amp Tasarım
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Logo Tasarımı
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Reklam & Banner Tasarımı
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Broşür & Katalog Tasarımı
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        3D Tasarımlar
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        UI/UX Tasarımı
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Sosyal Medya Tasarımları
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        İllüstrasyon
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Ambalaj Tasarımı
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Fotoğraf & Düzenleme
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Sunum & Infografik
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Kurumsal Kimlik & Kartvizit
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Karikatür & Karakalem
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Davetiye Tasarımları
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="nav-link">
-                        Diğer Tasarımlar
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
     <!-- main -->
     <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-xl-3 offset-lg-4 content">
-                    <div class="row filtre">
-                        <div class="col-12">
-                            <ul class="d-flex justify-content-end">
-                                <li class="filtre-item">
-                                    Sıralama
-                                </li>
+        <div class="content">
 
-                                <li class="filtre-item">
-                                    Sıralama
-                                </li>
-                            </ul>
+            <section class="why py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="topic-grey">
+                                Neden FreeOn?
+                            </h2>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col">
-                            <div class="card-deck mb-4">
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-deck mb-4">
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-deck mb-4">
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img src="images/IMG2.jpg" class="card-img-top" alt="portfolio">
-
-                                    <div class="card-body p-3">
-                                        <div class="card-profile d-flex align-items-center">
-                                            <div class="portfolio-p-p">
-                                                <img src="images/IMG.jpg" alt="p-photo">
-                                            </div>
-
-                                            <h5 class="pl-2">oguzztrk</h5>
-                                        </div>
-
-                                        <p class="card-text">Ben sizin için muhteşem logolar tasarlarım.</p>
-                                    </div>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <div class="card-bottom d-flex justify-content-between p-3">
-                                        <div class="rank">
-                                            <ul class="d-flex">
-                                                <li class="card-star pr-2">
-                                                    <img src="images/card-star.svg" alt="star">
-                                                </li>
-                                                <li class="color-orange pr-2">
-                                                    5.0
-                                                </li>
-                                                <li class="color-muted">
-                                                    (333)
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-price">
-                                            300 TL
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col font-type-grey-50 py-4">
+                            Çünkü komisyon bedeli almıyoruz...
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="nasil-calisir py-5 mb-5">
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col topic-grey py-3">
+                            Nasıl Çalışır?
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <h4 class="font-type-grey-40 py-3">Post</h4>
+
+                            <p class="font-type-grey-30 py-3">
+                                Define the job and specify the types of skills needed to work on it. Posting is
+                                absolutely
+                                free.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <h4 class="font-type-grey-40 py-3">Pick / Hire</h4>
+
+                            <p class="font-type-grey-30 py-3">
+                                You will instantly start getting proposals from our qualified freelancers. Pick
+                                your perfect
+                                freelancer.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <h4 class="font-type-grey-40 py-3">Start</h4>
+
+                            <p class="font-type-grey-30 py-3">
+                                Make the full payment for the project to get it started. Workana holds the
+                                payment in
+                                escrow.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <h4 class="font-type-grey-40 py-3">Job Done</h4>
+
+                            <p class="font-type-grey-30 py-3">
+                                Happy with the work done? Release payment to the freelancer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
